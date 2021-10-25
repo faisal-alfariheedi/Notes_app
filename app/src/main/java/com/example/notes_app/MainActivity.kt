@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
                 var st=dbh.addnote(edn.text.toString())
                 setuprvdata()
                 Toast.makeText(this,"note saved in row$st",Toast.LENGTH_SHORT).show()
+                edn.text.clear()
             }
         }
     }
@@ -35,9 +36,11 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun setuprvdata() {
+    fun setuprvdata() {
         var list=dbh.getall()
         rv.adapter=RVAdapter(list,this)
         rv.layoutManager= LinearLayoutManager(this)
     }
+
+
 }

@@ -30,6 +30,35 @@
                 android:textAlignment="center"
                 android:textSize="25sp" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/edbut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="#057E57C2"
+                    android:minWidth="30dp"
+                    android:minHeight="30dp"
+                    app:srcCompat="@drawable/ic_baseline_edit_24"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:id="@+id/delbut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="#11FFFFFF"
+                    android:minWidth="30dp"
+                    android:minHeight="30dp"
+                    app:srcCompat="@drawable/ic_baseline_delete_forever_24"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
